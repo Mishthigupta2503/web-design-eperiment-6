@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Tech Blog</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background-color: #243b55;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Navigation */
+        .custom-nav {
+            background-color: #141e30;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .custom-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .custom-nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Blog cards */
+        .blog-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            height: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-card h2 {
+            color: #243b55;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .blog-card p {
+            line-height: 1.6;
+        }
+
+        .read-more {
+            background-color: #243b55;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .read-more:hover {
+            background-color: #141e30;
+            color: white;
+        }
+
+        footer {
+            background-color: #243b55;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+
+            header {
+                padding: 30px 15px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .custom-nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .blog-card {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 576px) {
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            .blog-card {
+                padding: 20px;
+            }
+
+            .blog-card h2 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Tech Blog</h1>
+        <p>Exploring Technology, Web Design and Programming</p>
+    </header>
+
+    <!-- Responsive Navigation -->
+    <nav class="custom-nav">
+        <a href="#home">Home</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5" id="home">
+
+        <h2 class="text-center mb-4" id="blogs">
+            Latest Blog Posts
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- Blog Card 1 -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <article class="blog-card">
+                    <h2>Introduction to Web Design</h2>
+
+                    <p>
+                        Web design involves creating websites that are
+                        attractive, accessible and easy to use.
+                    </p>
+
+                    <p>
+                        HTML provides structure, CSS provides styling,
+                        and JavaScript adds interactivity.
+                    </p>
+
+                    <a href="#about" class="read-more">
+                        Read More
+                    </a>
+                </article>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <article class="blog-card">
+                    <h2>Why Responsive Design Matters</h2>
+
+                    <p>
+                        Responsive design allows websites to adapt to
+                        desktops, tablets and mobile phones.
+                    </p>
+
+                    <p>
+                        Bootstrap and CSS media queries make responsive
+                        web development easier.
+                    </p>
+
+                    <a href="#about" class="read-more">
+                        Read More
+                    </a>
+                </article>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <article class="blog-card">
+                    <h2>Getting Started with Programming</h2>
+
+                    <p>
+                        Programming helps us solve problems by creating
+                        instructions that computers can understand.
+                    </p>
+
+                    <p>
+                        Learning programming step by step helps build
+                        strong technical skills.
+                    </p>
+
+                    <a href="#about" class="read-more">
+                        Read More
+                    </a>
+                </article>
+            </div>
+
+        </div>
+
+        <!-- About -->
+        <section class="mt-5 text-center" id="about">
+            <h2>About This Blog</h2>
+
+            <p>
+                This responsive blog is created as part of the
+                Web Designing Lab to demonstrate Bootstrap and
+                CSS media queries.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Web Designing Lab | Experiment 6</p>
+    </footer>
+
+</body>
+</html>
